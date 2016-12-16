@@ -56,3 +56,15 @@ img {
 article {
   display: block;
 }
+
+@media screen and (max-width: 465px) {
+  .main-img {
+    display: none;
+  }
+}
+
+p.text {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.2em;
+}
