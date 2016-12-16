@@ -33,22 +33,23 @@ div.header-content {
   padding-top: 30px;
   background: transparent;
   font-size: 4em;
-  color: black;
+  color: #000;
 }
 .sub-title {
   background: transparent;
   font-size: 2.5em;
-  color: black;
+  color: #000;
 }
 
 .main {
   margin: 2em;
 }
+
 .content {
   width: 100%;
-  height: 150px;
   display: flex;
-  /*flex-wrap: wrap;*/
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 figure {
@@ -65,10 +66,8 @@ article {
   max-width: 50em;
 }
 
-@media screen and (max-width: 465px) {
-  .main-img, .main-contact {
+.main-img, .main-contact {
     display: none;
-  }
 }
 
 p.text {
@@ -77,16 +76,101 @@ p.text {
   line-height: 1.2em;
 }
 
+.works-title {
+  margin-top: 1em;
+}
+
+.content1, .content2, .content3 {
+  width: 100%;
+}
+
+.work {
+  margin-top: 1em;
+}
+
+/*.foot {
+  display: flex;
+  flex-wrap: wrap;
+}*/
+
+footer {
+  width: 100%;
+  background-color: blue;
+}
+
+
+/*
+#
+# media queries
+#
+*/
+
+@media screen and (min-width: 465px) {
+  .main-img {
+    display: inline;
+    margin-top: 1em;
+  }
+
+  .content1, .content2, .content3 {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .work1-img, .work2-img, .work3-img {
+    width: 40%;
+    max-height: 130px;
+    margin-right: 20px;
+  }
+}
+
+
 @media screen and (min-width: 650px) {
+  .main-img {
+    display: inline;
+    margin-top: 1em;
+  }
+
   .main-text, .main-contact {
     float: left;
     width: calc((100% - 20px)/2);
     margin-right: 20px;
   }
+
   .main-contact {
+    display: inline;
     margin-right: 0px;
   }
+
+  .content {
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .content1, .content2, .content3 {
+    width: calc((100% - 20px)/3);
+    margin-right: 20px;
+    display: inline;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .content3 {
+    margin-right: 0px;
+  }
+
+  .work {
+    width: 100%;
+  }
 }
+
+/*
+#
+# zocial
+#
+*/
 
 [class*="zocial-"]:before {
   color: black;
