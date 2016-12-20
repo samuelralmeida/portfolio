@@ -57,7 +57,7 @@ module.exports = function(grunt) {
       },
     },
 
-    /* Copy the "fixed" images that don't go through processing into the images/directory*
+    /* Copy the "fixed" images that don't go through processing into the images/directory */
     copy: {
       dev: {
         files: [{
@@ -66,14 +66,14 @@ module.exports = function(grunt) {
           dest: 'img/'
         }]
       },
-    },*/
+    },
   });
   
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  /*grunt.loadNpmTasks('grunt-contrib-copy');*/
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['clean', 'mkdir', 'responsive_images']);
-  /*grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);*/
+  /*grunt.registerTask('default', ['clean', 'mkdir', 'responsive_images']);*/
+  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
 
 };

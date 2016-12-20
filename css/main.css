@@ -22,20 +22,45 @@ header {
   text-align: center;
 }
 
+.table-header {
+  max-width: 60em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-header tr {
+  text-align: center;
+}
+
+.td1 {
+  width: 70%;
+}
+
+.td2 {
+  width: 30%
+}
+
 .title {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-img {
+  width: 50%;
+  height: 50%;
 }
 
 .main-title {
+  width: 100%;
   background: transparent;
-  font-size: 4em;
-  color: white;
+  font-size: 5vmax;
+  color: #7d97ad;
   margin: 0px;
 }
 .sub-title {
   background: transparent;
-  font-size: 2.5em;
-  color: white;
+  font-size: 2.5vmax;
+  color: #7d97ad;
   margin: 0px;
 }
 
@@ -71,10 +96,15 @@ h1 {
 
 p {
   font-size: 16px;
+  line-height: 1.25em;
 }
 
 .me, .contacts {
   width: 100%;
+}
+
+.me p {
+  text-align: justify;
 }
 
 .main-img, .contacts {
@@ -113,7 +143,12 @@ img {
 }
 
 .work-txt {
+  width: 100%;
   margin-top: 10px;
+}
+
+.work-img {
+  width: 100%;
 }
 
 .work-img img {
@@ -172,7 +207,7 @@ div#contacts {
 }
 
 .table-contact {
-  width: 1005;
+  width: 100%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -203,8 +238,8 @@ div#contacts {
     display: block;
   }
   .me, .contacts {
-    width: calc((100% - 10px)/2);
-    margin-right: 10px;
+    width: calc((100% - 20px)/2);
+    margin-right: 20px;
   }
   .contacts {
     margin-right: 0px;
