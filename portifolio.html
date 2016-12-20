@@ -4,80 +4,118 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 	<meta name="mobile-web-app-capable" content="yes">
-	<title>Samuel's Portifolio Site</title>
+	<title>Samuel's Portfolio Site</title>
 	
 	<link rel="stylesheet" href="css/main.css" />
 	<link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
 	<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
 </head>
 <body>
+	
 	<header>
-		<div class="header-content">
-            <p class="main-title">Samuel Sousa</p>
-            <p class="sub-title">Full Stack Web Developer</p>
+		<div class="title">
+			<p class="main-title">Samuel Sousa</p>
+	        <p class="sub-title">Full Stack Web Developer</p>
         </div>
 	</header>
-	<main class="main">
+
+	<main>
 		<article class="about-me">
-	   		<div class="content">
-	   			<div class="main-text">
-		   			<h1>About me</h1>
-		   			<hr>
-		   			<p class="text">I'm Samuel, brazilian and pharmacists. I'm a tech enthusiast who started by studying python out of curiosity some years ago. Nowadays I'm study to develop web application. </p>	
-	   			</div>
-		    	<div class="main-contact" id="social">
-		    		<h1>Contact me</h1>
-		    		<hr>
-			      	<div id="contacts">
-				      	<p><a href="#" class="zocial-linkedin">Linkedin</a></p>
-				      	<p><a href="#" class="zocial-facebook">Facebook</a></p>
-				      	<p><a href="#" class="zocial-email">E-mail</a></p>
-				      	<p><a href="#" class="zocial-github">Github</a></p>
-				    </div> 
-		    	</div>
-	   		</div>
-	   		<picture>
-				<source media="(min-width: 650px)" srcset="img/programação-1600_short_2x.png">
-				<source media="(min-width: 465px)" srcset="img/programação-800_medium_1x.png">
+			<section class="me">
+				<h1>About me</h1>
+				<hr>
+				<p>Me chamo samuel</p>
+			</section>
+	
+			<section class="contacts">
+				<h1>Contacts</h1>
+				<hr>
+		      	<div id="contacts">
+			      	<p><a href="#" class="zocial-linkedin">Linkedin</a></p>
+			      	<p><a href="#" class="zocial-facebook">Facebook</a></p>
+			      	<p><a href="#" class="zocial-email">E-mail</a></p>
+			      	<p><a href="#" class="zocial-github">Github</a></p>
+			    </div> 		
+			</section>
+		</article>
+
+		<section class="main-img">
+			<picture>
+				<source media="(min-width: 650px)" srcset="img/programação-1600_short_2x.png 2x">
+				<source media="(min-width: 465px)" srcset="img/programação-800_medium_1x.png 1x">
 				<img class="main-img" srcset="img/programação-400_small.png" alt="Illustrative picture about web development">
 	   		</picture>
-	    </article>
-	    <article class="works">
-	    	<div class="works-title">
-	    		<h1>Featured Work</h1>
-	    		<hr>
-	    	</div>
-	    	<div class="content">
-	    		<div class="content1">
-		    		<div class="work work1-img">
-		    			<img src="https://placehold.it/350x150">
-		    		</div>
-		    		<div class="work work1-text">
-		    			<p>Teste</p>
-		    		</div>
-		    	</div>
-		    	<div class="content2">	
-		    		<div class="work work2-img">
-		    			<img src="https://placehold.it/350x150">
-		    		</div>
-		    		<div class="work work2-text">
-		    			<p>Teste</p>
-		    		</div>
-		    	</div>
-		    	<div class="content3">
-		    		<div class="work work3-img">
-		    			<img src="https://placehold.it/350x150">
-		    		</div>
-		    		<div class="work work3-text">
-		    			<p>Teste</p>
-		    		</div>
-	    		</div>
-	    	</div>
-	    </article>
-	</main>
-	<footer>
+		</section>
 
-			<p>Rodapé</p>
+		<article class="works">
+			<section class="header-works">
+				<h1>Featured work</h1>
+				<hr>
+			</section>
+			
+			<section class="featured-works">
+				<section class="work work1">
+					<div class="work-img">
+						<picture>
+							<source media="(min-width: 1024px)" srcset="img/clapperboard-1600_large_2x.png 2x">
+							<source media="(min-width: 500px)" srcset="img/clapperboard-800_medium_1x.png 1x">
+							<img srcset="img/clapperboard-400_small.png" alt="Clap board">
+				   		</picture>
+					</div>
+					<div class="work-txt">
+						<p class="work-title">WEBSITE TRAILER</p>
+						<p><a href="https://github.com/samuelralmeida/mmfw">https://github.com/samuelralmeida/mmfw</a></p>
+					</div>
+				</section>
+
+				<section class="work work2">
+					<div class="work-img">
+						<picture>
+							<source media="(min-width: 1024px)" srcset="img/blog-1600_large_2x.jpg 2x">
+							<source media="(min-width: 500px)" srcset="img/blog-800_medium_1x.jpg 1x">
+							<img srcset="img/blog-400_small.jpg" alt="Illustrative picture about web development">
+				   		</picture>
+					</div>
+					<div class="work-txt">
+						<p class="work-title">BLOG</p>
+						<p>under construction</p>
+					</div>
+				</section>
+
+				<section class="work work3">
+					<div class="work-img">
+						<picture>
+							<source media="(min-width: 650px)" srcset="img/programação-1600_short_2x.png">
+							<source media="(min-width: 465px)" srcset="img/programação-800_medium_1x.png">
+							<img srcset="https://placehold.it/350x150" alt="Illustrative picture about web development">
+				   		</picture>
+					</div>
+					<div class="work-txt">
+						<p class="work-title">PORTFOLIO</p>
+						<p><a href="https://github.com/samuelralmeida/portifolio">https://github.com/samuelralmeida/portifolio</a></p>
+					</div>
+				</section>				
+			</section>
+
+
+		</article>
+	</main>
+
+	<footer>
+		<section class="sub-contact" id="social">
+			<h1>Contact me</h1>
+	      	<div id="contacts" style="overflow-x:auto;">
+	      		<table class="table-contact">
+    				<tr>
+        				<td><p><a href="#" class="zocial-linkedin">Linkedin</a></p></td>
+        				<td><p><a href="#" class="zocial-facebook">Facebook</a></p></td>
+        				<td><p><a href="#" class="zocial-email">Email</a></p></td>
+        				<td><p><a href="#" class="zocial-github">Github</a></p></td>
+    				</tr>
+    			</table>
+			</div> 
+		</section>>
 	</footer>
+
 </body>
 </html>
