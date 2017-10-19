@@ -1,6 +1,8 @@
 # Portfolio Site - Samuel Sousa
 
-This is my website to show web applications that I develop.
+A personal website to practice HTML, CSS3 and responsive pages.
+
+It show web applications that I develop to learn programming.
 
 ## Installation and use
 
